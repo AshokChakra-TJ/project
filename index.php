@@ -68,7 +68,7 @@ if(isset($_POST['sb']))
 ?>
 <div align="center">
 <br>
-<div class="text" style="background-color:#333; padding:10px 0 10px 0; margin-top:-20px; position:fixed; width:100%;">Welcome to FluxKaGroup.tk</div>
+<div class="text" style="background-color:#333; padding:10px 0 10px 0; margin-top:-20px; position:fixed; width:100%;">Covid-19 Feedbook</div>
 <br>
 <br>
 <p style="font-size:24px; font-family:'Courier New', Courier, monospace; background-color:#CC9; margin-top:10px;"><?php echo $lg_mess; ?></p>
@@ -100,8 +100,8 @@ if(isset($_POST['sb']))
 </table>
 </form>
 </div>
-<div class="text2" style="background-color:#333; text-align:center;">2018 &copy; FluxKaGroup.tk<br>
-Design by Ashok Choudhary<br>contact@fluxkagroup.tk
+<div class="text2" style="background-color:#333; text-align:center;">2020 &copy; Covid-19 Feedbook<br>
+Developed by Ashok Choudhary, Harshit Jain and Shivam Singhal<br>c19feedbook@gmail.com
 </div>
 </div>
 </body>
