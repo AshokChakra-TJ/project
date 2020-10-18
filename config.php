@@ -1,3 +1,3 @@
 <?php
-$con=mysqli_connect('localhost','root','','flux') or die (mysqli_error());
+$con=mysqli_connect('localhost','root','','JComp') or die (mysqli_error());
 ?>

@@ -3,7 +3,7 @@ error_reporting(0);
 include_once('config.php');
 include_once('login.php');
 session_start();
-if($_SESSION['user_access_for_flux'])
+if($_SESSION['user_access'])
 {
 	header("location:dashboard.php");
 }

@@ -2,9 +2,9 @@
 <?php 
 include_once('config.php');
 session_start();
-if($_SESSION['user_access_for_flux'])
+if($_SESSION['user_access'])
 {
-	$session_email=$_SESSION['user_access_for_flux'];
+	$session_email=$_SESSION['user_access'];
 	$q="select*from users where email='$session_email'";
 	$ck=mysqli_query($con,$q);
 	$chotu=mysqli_fetch_array($ck);

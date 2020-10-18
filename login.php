@@ -14,7 +14,7 @@ $error="";
 			 if($chotu_for_login>0)
 			 {
 				 session_start();
-		        $_SESSION["user_access_for_flux"]=$email;
+		        $_SESSION["user_access"]=$email;
 				header("location:dashboard.php");
 			 }
 			 else
