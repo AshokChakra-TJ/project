@@ -13,7 +13,7 @@ $lg_mess="";
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Welcome!!!!!! ashok Harshit</title>
+<title>Covid-19 Feedbook</title>
 <link rel="stylesheet" type="text/css" href="style/log_th.css">
 <style type="text/css">
 *{margin:0; padding:0;}
