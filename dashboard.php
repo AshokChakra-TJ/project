@@ -31,7 +31,7 @@ else{header("location:index.php");}
 <html>
 <head>
 
-<title>Flux Ka Group</title>
+<title>Covid-19 Feedbook | Dashboard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style/style.css">
@@ -47,7 +47,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onClick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Flux Ka Group</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Covid-19 Feedbook</a>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
@@ -82,9 +82,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
          <p class="w3-center"><img src="<?php echo "./$pic"; ?>" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
          <h4 class="w3-center"><?php echo $name ?></h4>
          <hr>
-         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-text-theme"></i> Programmer</p>
+         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-text-theme"></i> Doner</p>
          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Rajasthan, IN</p>
-         <p><i class="fa fa-book fa-fw w3-margin-right w3-text-theme"></i>Student Of Flux IT</p>
+         <p><i class="fa fa-book fa-fw w3-margin-right w3-text-theme"></i>Student of VIT Chennai</p>
         </div>
       </div>
       <br>
@@ -297,17 +297,17 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
     <div class="w3-col m2">
       <div class="w3-card w3-round w3-white w3-center">
         <div class="w3-container">
-          <p>Upcoming Events:</p>
+          <p>Covid-19 Updates:</p>
           <p><strong><?php echo $event_title; ?></strong></p>
           <p><?php echo $event_description; ?></p>
-          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+          <p><button class="w3-button w3-block w3-theme-l4">Go to official Website</button></p>
         </div>
       </div>
       <br>
       
       <div class="w3-card w3-round w3-white w3-center">
         <div class="w3-container">
-          <p>Friend Request</p>
+          <p>Request for donation</p>
           <img src="<?php echo "./$pic";?>" alt="Avatar" style="width:50%"><br>
           <span><?php echo $name ?></span>
           <div class="w3-row w3-opacity">
@@ -328,7 +328,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <br>
       
       <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
-        <p><i class="fa fa-bug w3-xxlarge"></i><br>Report Bugs</p>
+        <p><i class="fa fa-bug w3-xxlarge"></i><br>Report Bugs<br>c19feedbook@gmail.com</p>
       </div>
       
     <!-- End Right Column -->
