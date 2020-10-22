@@ -155,7 +155,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           <i class="fa fa-remove"></i>
         </span>
         <p><strong>Hey!</strong></p>
-        <p>People are looking at your profile. Find out who.</p>
+        <p>Stay Home, Stay Safe!</p>
       </div>
     
     <!-- End Left Column -->
@@ -169,7 +169,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           <div class="w3-card w3-round w3-white">
             <div class="w3-container w3-padding">
             
-              <h6 class="w3-opacity">New Post</h6>
+              <h6 class="w3-opacity">Create New Post</h6>
               <form action="" method="post" enctype="multipart/form-data">
               <p   onMouseOver="window.cookie()" onKeyUp="window.cookie()" contenteditable style="width:100%;" id="text" name="text" class="w3-border w3-padding"></p> 
                  
@@ -343,11 +343,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 
 <!-- Footer -->
 <footer class="w3-container w3-theme-d3 w3-padding-16">
-  <h5>2018 &copy; FluxKaGroup.TK</h5><h4><a type="button" class="w3-button w3-theme" href="#top">&uarr; Top</a></h4>
+  <h5>2020 &copy; Covid-19 Feedbook</h5><h4><a type="button" class="w3-button w3-theme" href="#top">&uarr; Top</a></h4>
 </footer>
 
 <footer class="w3-container w3-theme-d5">
-  <p>Powered by <a href="https://it.todawata.com" target="_blank">Todawata IT | A Unit Of Todawata Group Of Companies </a></p>
+  <p>Developed by Ashok Choudhary, Harshit Jain and Shivam Singhal</p>
 </footer>
  
 <script>
