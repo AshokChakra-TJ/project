@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+//error_reporting(0);
 include_once('config.php');
 include_once('login.php');
 session_start();
@@ -54,7 +54,7 @@ if(isset($_POST['sb']))
 	$dir="images/users/$email/profile/";
 	$pic=$dir.basename($_FILES['pic']['name']);
 	move_uploaded_file($_FILES['pic']['tmp_name'],$pic);
-	$query_sign_up="insert into users values('','$name','$email','$password','$pic',CURRENT_TIMESTAMP,NOW(),'1')";
+	$query_sign_up="insert into users values(NULL,'$name','$email','$password','$pic',CURRENT_TIMESTAMP,NOW(),'1')";
 	$ck_sign_up=mysqli_query($con,$query_sign_up);
 	$query2="CREATE TABLE `user_images_$email`(sn INT(11) NOT NULL AUTO_INCREMENT,image_description VARCHAR(50) NULL DEFAULT NULL,pic VARCHAR(200) NOT NULL, status TINYINT(1) NOT NULL , PRIMARY KEY (sn))";
 	$ck2=mysqli_query($con,$query2);
