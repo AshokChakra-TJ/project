@@ -101,7 +101,7 @@ if(isset($_POST['sb']))
 </form>
 </div>
 <div class="text2" style="background-color:#333; text-align:center;">2020 &copy; Covid-19 Feedbook<br>
-Developed by Ashok Choudhary, Harshit  and Shivam <br>c19feedbook@gmail.com
+Developed by Ashok Choudhary, NoString98  and Shivam <br>c19feedbook@gmail.com
 </div>
 </div>
 </body>
