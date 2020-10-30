@@ -89,11 +89,10 @@ if(isset($_POST['sb'])){
 <tr align="center"><td><input required placeholder="Email address" type="email" name="email" class="button2"><?php echo $mes ?></td></tr>
 <tr align="center"><td><input required placeholder="Password" type="password" name="password" class="button2"></td></tr>
 <tr align="center"><td>
-<label for="type">Choose Type:</label>
-<select name="type" id="type">
-	<option value="select">---Select---</option>
-	<option value="doner">Doner</option>
-	<option value="receiver">Receiver</option>
+<select name="type" id="type" class="button2">
+	<option value="select">---Choose Type---</option>
+	<option value="Doner">Doner</option>
+	<option value="Receiver">Receiver</option>
 </select> 
 </td></tr>
 <tr align="center"><td><label for="files" id="label_1" class="button pointer" style="width:250px; background-color:#0F6; padding:10px; color:#FFF">Choose profile picture</label><input  type="file" name="pic" style="display:none;" id="files" onChange="document.getElementById('label_1').innerHTML='Picture choosed!';"></td></tr>
