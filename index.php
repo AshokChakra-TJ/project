@@ -43,12 +43,15 @@ if(isset($_POST['sb'])){
 	else{
 	
 	$password=$_POST['password'];
+	$type=$_POST['type'];
+	$address=$_POST['address'];
+	$occupation=$_POST['occupation'];
 	mkdir("./images/users/$email");
 	mkdir("./images/users/$email/profile");
 	$dir="images/users/$email/profile/";
 	$pic=$dir.basename($_FILES['pic']['name']);
 	move_uploaded_file($_FILES['pic']['tmp_name'],$pic);
-	$query_sign_up="insert into users values(NULL,'$name','$email','$password','$pic',CURRENT_TIMESTAMP,NOW(),'1')";
+	$query_sign_up="insert into users values(NULL,'$name','$email','$password','$type','$address','$occupation','$pic',CURRENT_TIMESTAMP,NOW(),'1')";
 	$ck_sign_up=mysqli_query($con,$query_sign_up);
 	$query2="CREATE TABLE `user_images_$email`(sn INT(11) NOT NULL AUTO_INCREMENT,image_description VARCHAR(50) NULL DEFAULT NULL,pic VARCHAR(200) NOT NULL, status TINYINT(1) NOT NULL , PRIMARY KEY (sn))";
 	$ck2=mysqli_query($con,$query2);
@@ -85,18 +88,20 @@ if(isset($_POST['sb'])){
 <br>
 <form action="" method="post" enctype="multipart/form-data">
 <table border="0" align="center">
-<tr align="center"><td><input required placeholder="Full name" type="text" name="name" class="button2"></td></tr>
-<tr align="center"><td><input required placeholder="Email address" type="email" name="email" class="button2"><?php echo $mes ?></td></tr>
-<tr align="center"><td><input required placeholder="Password" type="password" name="password" class="button2"></td></tr>
+<tr align="center"><td colspan="2"><input style="width:100%" required placeholder="Full name" type="text" name="name" class="button2"></td></tr>
+<tr align="center"><td><input required placeholder="Email address" type="email" name="email" class="button2"><?php echo $mes ?></td>
+<td><input required placeholder="Password" type="password" name="password" class="button2"></td></tr>
 <tr align="center"><td>
 <select name="type" id="type" class="button2">
 	<option value="select">---Choose Type---</option>
 	<option value="Doner">Doner</option>
 	<option value="Receiver">Receiver</option>
 </select> 
-</td></tr>
-<tr align="center"><td><label for="files" id="label_1" class="button pointer" style="width:250px; background-color:#0F6; padding:10px; color:#FFF">Choose profile picture</label><input  type="file" name="pic" style="display:none;" id="files" onChange="document.getElementById('label_1').innerHTML='Picture choosed!';"></td></tr>
-<tr align="center"><td align="center"><input name="sb" type="submit" value="Sign Up" class="button pointer" style="background-color:#C93; width:180px; color:#FFF;"></td></tr>
+</td>
+<td><label for="files" id="label_1" class="button pointer" style="width:250px; background-color:#0F6; padding:10px; color:#FFF">Choose profile picture</label><input  type="file" name="pic" style="display:none;" id="files" onChange="document.getElementById('label_1').innerHTML='Picture choosed!';"></td></tr>
+<tr><td colspan="2"><textarea placeholder="Address" class="button2" style="width:100%; padding:10px; height:80px;" name="address"></textarea></td></tr>
+<tr><td colspan="2"><input style="width:100%;" required placeholder="Occupation" name="occupation" type="text" class="button2"></td></tr>
+<tr align="center"><td colspan="2" align="center"><input name="sb" type="submit" value="Sign Up" class="button pointer" style="background-color:#C93; width:180px; color:#FFF;"></td></tr>
 
 </table>
 </form>

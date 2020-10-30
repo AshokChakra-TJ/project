@@ -10,7 +10,10 @@ if($_SESSION['user_access'])
 	$chotu=mysqli_fetch_array($ck);
 	$sn=$chotu['sn'];
 	$name=$chotu['name'];
-	$email=$chotu['email'];
+  $email=$chotu['email'];
+  $type=$chotu['type'];
+  $address=$chotu['address'];
+  $occupation=$chotu['occupation'];
 	$pic=$chotu['pic'];
 	$q2="select*from events where status=1";
 	$ck2=mysqli_query($con,$q2);
@@ -82,9 +85,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
          <p class="w3-center"><img src="<?php echo "./$pic"; ?>" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
          <h4 class="w3-center"><?php echo $name ?></h4>
          <hr>
-         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-text-theme"></i> Doner</p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Rajasthan, IN</p>
-         <p><i class="fa fa-book fa-fw w3-margin-right w3-text-theme"></i>Student of VIT Chennai</p>
+         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-text-theme"></i><?php echo $type ?></p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <?php echo $address ?></p>
+         <p><i class="fa fa-book fa-fw w3-margin-right w3-text-theme"></i><?php echo $occupation ?></p>
         </div>
       </div>
       <br>
