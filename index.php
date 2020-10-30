@@ -1,10 +1,9 @@
 <?php
-//error_reporting(0);
+error_reporting(0);
 include_once('config.php');
 include_once('login.php');
 session_start();
-if($_SESSION['user_access'])
-{
+if($_SESSION['user_access']){
 	header("location:dashboard.php");
 }
 $lg_mess="";
@@ -25,28 +24,23 @@ $lg_mess="";
 <body>
 <?php
 $mes="";
-if(isset($_POST['sb']))
-{
+if(isset($_POST['sb'])){
 	$name=$_POST['name'];
 	$email=$_POST['email'];
 	$ck_email_q="select email from users";
 	$ck_ck_email_q=mysqli_query($con,$ck_email_q);
 	$flag=0;
-	while($chotu=mysqli_fetch_array($ck_ck_email_q))
-	{
+	while($chotu=mysqli_fetch_array($ck_ck_email_q)){
 		$email_vfy=$chotu['email'];
-		if($email==$email_vfy)
-		{
+		if($email==$email_vfy){
 			$flag=1;
 			break;
 		}
 	}
-	if($flag==1)
-	{
+	if($flag==1){
 		$mes="<br><font color='red'>This email address is already registered! try another to sign up.</font>";
 	}
-	else
-	{
+	else{
 	
 	$password=$_POST['password'];
 	mkdir("./images/users/$email");
@@ -94,6 +88,14 @@ if(isset($_POST['sb']))
 <tr align="center"><td><input required placeholder="Full name" type="text" name="name" class="button2"></td></tr>
 <tr align="center"><td><input required placeholder="Email address" type="email" name="email" class="button2"><?php echo $mes ?></td></tr>
 <tr align="center"><td><input required placeholder="Password" type="password" name="password" class="button2"></td></tr>
+<tr align="center"><td>
+<label for="type">Choose Type:</label>
+<select name="type" id="type">
+	<option value="select">---Select---</option>
+	<option value="doner">Doner</option>
+	<option value="receiver">Receiver</option>
+</select> 
+</td></tr>
 <tr align="center"><td><label for="files" id="label_1" class="button pointer" style="width:250px; background-color:#0F6; padding:10px; color:#FFF">Choose profile picture</label><input  type="file" name="pic" style="display:none;" id="files" onChange="document.getElementById('label_1').innerHTML='Picture choosed!';"></td></tr>
 <tr align="center"><td align="center"><input name="sb" type="submit" value="Sign Up" class="button pointer" style="background-color:#C93; width:180px; color:#FFF;"></td></tr>
 
@@ -101,7 +103,7 @@ if(isset($_POST['sb']))
 </form>
 </div>
 <div class="text2" style="background-color:#333; text-align:center;">2020 &copy; Covid-19 Feedbook<br>
-Developed by Ashok Choudhary, NoString98  and Shivam <br>c19feedbook@gmail.com
+Developed by Ashok Choudhary, Harshit Jain  and Shivam Singhal <br>c19feedbook@gmail.com
 </div>
 </div>
 </body>

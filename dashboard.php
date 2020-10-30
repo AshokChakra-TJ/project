@@ -89,73 +89,48 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       </div>
       <br>
       
-      <!-- Accordion -->
+      <!-- Stats -->
       <div class="w3-card w3-round">
         <div class="w3-white">
-          <button onClick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+          <button onClick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l2 w3-left-align">
+          <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>India Case
+          </button>
           <div id="Demo1" class="w3-hide w3-container">
-            <p>0 Groups</p>
+          <b>Total: </b>  80,94,075 &nbsp;&nbsp; <b>Active: </b>  5,94,948 <br>
+          <b>Recovered: </b>  73,76,520 &nbsp;&nbsp; <b>Deaths: </b>  1,21,207
           </div>
-          <button onClick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <button onClick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l2 w3-left-align">
+          <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Worldwide Case
+          </button>
           <div id="Demo2" class="w3-hide w3-container">
-            <p>0 Events</p>
+          <b>Total: </b>  45.1M<br>
+          <b>Recovered: </b>  30.3M &nbsp;&nbsp; <b>Deaths: </b>  1.18M
           </div>
-          <button onClick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
-          <div id="Demo3" class="w3-hide w3-container">
-         <div class="w3-row-padding">
-         <br>
-           <div class="w3-half">
-             <img src="<?php echo "./$pic"?>" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="<?php echo "./$pic"?>" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="<?php echo "./$pic"?>" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="<?php echo "./$pic"?>" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="<?php echo "./$pic"?>" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="<?php echo "./$pic"?>" style="width:100%" class="w3-margin-bottom">
-           </div>
-         </div>
-          </div>
+          
         </div>      
       </div>
       <br>
       
-      <!-- Interests --> 
-      <div class="w3-card w3-round w3-white w3-hide-small">
-        <div class="w3-container">
-          <p>Interests</p>
-          <p>
-            <span class="w3-tag w3-small w3-theme-d5">News</span>
-            <span class="w3-tag w3-small w3-theme-d4">C++</span>
-            <span class="w3-tag w3-small w3-theme-d3">Java</span>
-            <span class="w3-tag w3-small w3-theme-d2">Games</span>
-            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
-            <span class="w3-tag w3-small w3-theme">C Language</span>
-            <span class="w3-tag w3-small w3-theme-l1">Php</span>
-            <span class="w3-tag w3-small w3-theme-l2">Food</span>
-            <span class="w3-tag w3-small w3-theme-l3">Design</span>
-            <span class="w3-tag w3-small w3-theme-l4">Art</span>
-            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
-          </p>
-        </div>
+      <!-- Do's --> 
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+      
+        <p><strong>Do's!</strong></p>
+        <p>Stay Home, Stay Safe!
+        <br>Wear a Mask
+        <br>Maintain Distance
+        <br>Wash Hands
+        </p>
       </div>
       <br>
       
-      <!-- Alert Box -->
+      <!-- Don'ts -->
       <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
-        <span onClick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
-          <i class="fa fa-remove"></i>
-        </span>
-        <p><strong>Hey!</strong></p>
-        <p>Stay Home, Stay Safe!</p>
+        
+        <p><strong>Don'ts!</strong></p>
+        <p>Don’t Panic, Take It Easy
+        <br>Avoid Fake News
+        <br>Avoid Going Out
+        </p>
       </div>
     
     <!-- End Left Column -->
