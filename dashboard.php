@@ -86,7 +86,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
          <h4 class="w3-center"><?php echo $name ?></h4>
          <hr>
          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-text-theme"></i><?php echo $type ?></p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <?php echo $address ?></p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i><?php echo $address ?></p>
          <p><i class="fa fa-book fa-fw w3-margin-right w3-text-theme"></i><?php echo $occupation ?></p>
         </div>
       </div>

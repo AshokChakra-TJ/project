@@ -93,7 +93,7 @@ if(isset($_POST['sb'])){
 <td><input required placeholder="Password" type="password" name="password" class="button2"></td></tr>
 <tr align="center"><td>
 <select name="type" id="type" class="button2">
-	<option value="select">---Choose Type---</option>
+	<option value="select">---Choose type---</option>
 	<option value="Doner">Doner</option>
 	<option value="Receiver">Receiver</option>
 </select> 
