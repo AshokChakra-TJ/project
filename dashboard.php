@@ -96,15 +96,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>India Case
           </button>
           <div id="Demo1" class="w3-hide w3-container">
-          <b>Total: </b>  80,94,075 &nbsp;&nbsp; <b>Active: </b>  5,94,948 <br>
-          <b>Recovered: </b>  73,76,520 &nbsp;&nbsp; <b>Deaths: </b>  1,21,207
+          <b>Total: </b>  82,30,711 &nbsp;&nbsp; <b>Active: </b>  5,63,709 <br>
+          <b>Recovered: </b>  75,42,905 &nbsp;&nbsp; <b>Deaths: </b>  1,22,651
           </div>
           <button onClick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l2 w3-left-align">
           <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Worldwide Case
           </button>
           <div id="Demo2" class="w3-hide w3-container">
-          <b>Total: </b>  45.1M<br>
-          <b>Recovered: </b>  30.3M &nbsp;&nbsp; <b>Deaths: </b>  1.18M
+          <b>Total: </b>  46.5 M<br>
+          <b>Recovered: </b>  31.1 M &nbsp;&nbsp; <b>Deaths: </b>  1.2 M
           </div>
           
         </div>      
@@ -299,14 +299,14 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       
       <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
         <p>Donate to NGOs</p>
-        <p><button class="w3-button w3-block w3-theme-l4">Link 1</button></p>
-        <p><button class="w3-button w3-block w3-theme-l4">Link 2</button></p>
-        <p><button class="w3-button w3-block w3-theme-l4">Link 3</button></p>
+        <p><button class="w3-button w3-block w3-theme-l4"><a href="https://www.cry.org/">CRY</a></button></p>
+        <p><button class="w3-button w3-block w3-theme-l4"><a href="http://doctorsforyou.org/">Doctors For You </a></button></p>
+        <p><button class="w3-button w3-block w3-theme-l4"><a href="https://www.helpageindia.org/">HelpAge India</a></button></p>
       </div>
       <br>
       
       <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
-        <p><i class="fa fa-bug w3-xxlarge"></i><br>Report Bugs<br>c19feedbook@gmail.com</p>
+        <p><i class="fa fa-bug w3-xxlarge"></i><br> <a href="mailto:c19feedbook@gmail.com">Report Bugs</a> </p>
       </div>
       
     <!-- End Right Column -->
