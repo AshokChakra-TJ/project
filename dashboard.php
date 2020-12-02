@@ -104,8 +104,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Worldwide Case
           </button>
           <div id="Demo2" class="w3-hide w3-container">
-          <b>Total: </b>  46.5 M<br>
-          <b>Recovered: </b>  31.1 M &nbsp;&nbsp; <b>Deaths: </b>  1.2 M
+          <b>Total: </b>  <?php echo $total_confirmed;?><br>
+          <b>Recovered: </b>  <?php echo $total_recovered;?> &nbsp;&nbsp; <b>Deaths: </b>  <?php echo $total_deaths;?>
           </div>
           
         </div>      
