@@ -96,8 +96,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>India Case
           </button>
           <div id="Demo1" class="w3-hide w3-container">
-          <b>Total: </b>  82,30,711 &nbsp;&nbsp; <b>Active: </b>  5,63,709 <br>
-          <b>Recovered: </b>  75,42,905 &nbsp;&nbsp; <b>Deaths: </b>  1,22,651
+          <b>Total: </b>  91,96,431 &nbsp;&nbsp; <b>Active: </b>  4,39,325 <br>
+          <b>Recovered: </b>  86,20,606 &nbsp;&nbsp; <b>Deaths: </b>  1,34,418
           </div>
           <button onClick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l2 w3-left-align">
           <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Worldwide Case
@@ -210,7 +210,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
         <p><?php echo $text1; ?></p>
           <div class="w3-row-padding" style="margin:0 -16px">
             
-              <img src="<?php echo "./$post_p"; ?>" style="width:100%" alt="No image in this post" class="w3-margin-bottom">
+              <!--<img src="<?php echo "./$post_p"; ?>" style="width:100%" alt="No image in this post" class="w3-margin-bottom">-->
       
         </div>
         <b style="color:#52769A"><?php echo $likes; ?> Likes</b>
@@ -272,17 +272,17 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
     <div class="w3-col m2">
       <div class="w3-card w3-round w3-white w3-center">
         <div class="w3-container">
-          <p>Events</p>
+          <p>Government Site:</p>
           <p><strong><?php echo $event_title; ?></strong></p>
           <p><?php echo $event_description; ?></p>
-          <p><button class="w3-button w3-block w3-theme-l4">Event link</button></p>
+          <p><button class="w3-button w3-block w3-theme-l4"><a href="https://www.mohfw.gov.in" >MoHFW</a></button></p>
         </div>
       </div>
       <br>
       
       <div class="w3-card w3-round w3-white w3-center">
         <div class="w3-container">
-          <p>Request for donation</p>
+          <p>Donate To</p>
           <img src="<?php echo "./$pic";?>" alt="Avatar" style="width:50%"><br>
           <span><?php echo $name ?></span>
           <div class="w3-row w3-opacity">
