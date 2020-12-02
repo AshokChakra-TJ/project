@@ -288,12 +288,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
         </div>
       </div>
       <br>
-      
+     <!-- 
       <div class="w3-card w3-round w3-white w3-center">
         <div class="w3-container">
           <p>Donate To</p>
-          <img src="<?php echo "./$pic";?>" alt="Avatar" style="width:50%"><br>
-          <span><?php echo $name ?></span>
+          <img src="<?php //echo "./$pic";?>" alt="Avatar" style="width:50%"><br>
+          <span><?php //echo $name ?></span>
           <div class="w3-row w3-opacity">
             <div class="w3-half">
               <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
@@ -304,7 +304,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           </div>
         </div>
       </div>
-      <br>
+      <br>-->
       
       <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
         <p>Donate to NGOs</p>
