@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php 
 include_once('config.php');
+include 'logic.php';
 session_start();
 if($_SESSION['user_access'])
 {
