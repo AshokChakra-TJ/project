@@ -98,8 +98,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           </button>
           <div id="Demo1" class="w3-hide w3-container">
           <table>
-          <tr><th align="left">Total Confirmed</th><td><?php echo $total_confirmed_india;?></td></tr>
-          <tr style="color:yellow"><th align="left">Active</th><td><?php echo $total_confirmed_india-$total_recovered_india-$total_deaths_india;?></td></tr>
+          <tr style="color:purple"><th align="left">Confirmed</th><td><?php echo $total_confirmed_india;?></td></tr>
+          <tr style="color:orange"><th align="left">Active</th><td><?php echo $total_confirmed_india-$total_recovered_india-$total_deaths_india;?></td></tr>
           <tr style="color:green"><th align="left">Recovered</th><td><?php echo $total_recovered_india;?></td></tr>
           <tr style="color:red"><th align="left">Deaths</th><td><?php echo $total_deaths_india;?></td></tr>
           </table>
@@ -109,8 +109,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           </button>
           <div id="Demo2" class="w3-hide w3-container">
           <table>
-          <tr><th align="left">Total Confirmed</th><td><?php echo $total_confirmed;?></td></tr>
-          <tr style="color:yellow"><th align="left">Active</th><td><?php echo $total_confirmed-$total_recovered-$total_deaths;?></td></tr>
+          <tr style="color:purple"><th align="left">Confirmed</th><td><?php echo $total_confirmed;?></td></tr>
+          <tr style="color:orange"><th align="left">Active</th><td><?php echo $total_confirmed-$total_recovered-$total_deaths;?></td></tr>
           <tr style="color:green"><th align="left">Recovered</th><td><?php echo $total_recovered;?></td></tr>
           <tr style="color:red"><th align="left">Deaths</th><td><?php echo $total_deaths;?></td></tr>
           </table>
