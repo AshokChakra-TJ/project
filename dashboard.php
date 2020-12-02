@@ -94,25 +94,25 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <div class="w3-card w3-round">
         <div class="w3-white">
           <button onClick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l2 w3-left-align">
-          <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>India Case
+          <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>India Cases
           </button>
           <div id="Demo1" class="w3-hide w3-container">
           <table>
-          <tr style="color:purple"><th align="left">Confirmed</th><td><?php echo $total_confirmed_india;?></td></tr>
-          <tr style="color:orange"><th align="left">Active</th><td><?php echo $total_confirmed_india-$total_recovered_india-$total_deaths_india;?></td></tr>
-          <tr style="color:green"><th align="left">Recovered</th><td><?php echo $total_recovered_india;?></td></tr>
-          <tr style="color:red"><th align="left">Deaths</th><td><?php echo $total_deaths_india;?></td></tr>
+          <tr style="color:purple"><th align="left">Confirmed: </th><td><?php echo $total_confirmed_india;?></td></tr>
+          <tr style="color:orange"><th align="left">Active: </th><td><?php echo $total_confirmed_india-$total_recovered_india-$total_deaths_india;?></td></tr>
+          <tr style="color:green"><th align="left">Recovered: </th><td><?php echo $total_recovered_india;?></td></tr>
+          <tr style="color:red"><th align="left">Deaths: </th><td><?php echo $total_deaths_india;?></td></tr>
           </table>
           </div>
           <button onClick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l2 w3-left-align">
-          <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Worldwide Case
+          <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Worldwide Cases
           </button>
           <div id="Demo2" class="w3-hide w3-container">
           <table>
-          <tr style="color:purple"><th align="left">Confirmed</th><td><?php echo $total_confirmed;?></td></tr>
-          <tr style="color:orange"><th align="left">Active</th><td><?php echo $total_confirmed-$total_recovered-$total_deaths;?></td></tr>
-          <tr style="color:green"><th align="left">Recovered</th><td><?php echo $total_recovered;?></td></tr>
-          <tr style="color:red"><th align="left">Deaths</th><td><?php echo $total_deaths;?></td></tr>
+          <tr style="color:purple"><th align="left">Confirmed: </th><td><?php echo $total_confirmed;?></td></tr>
+          <tr style="color:orange"><th align="left">Active: </th><td><?php echo $total_confirmed-$total_recovered-$total_deaths;?></td></tr>
+          <tr style="color:green"><th align="left">Recovered: </th><td><?php echo $total_recovered;?></td></tr>
+          <tr style="color:red"><th align="left">Deaths: </th><td><?php echo $total_deaths;?></td></tr>
           </table>
           </div>
           
@@ -219,7 +219,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
         <p><?php echo $text1; ?></p>
           <div class="w3-row-padding" style="margin:0 -16px">
             
-              <!--<img src="<?php echo "./$post_p"; ?>" style="width:100%" alt="No image in this post" class="w3-margin-bottom">-->
+              <img src="<?php echo "./$post_p"; ?>" style="width:100%" alt="No image in this post" class="w3-margin-bottom">
       
         </div>
         <b style="color:#52769A"><?php echo $likes; ?> Likes</b>
