@@ -20,5 +20,15 @@
         $total_recovered = $total_recovered + $value[$days_count]['recovered'];
         $total_deaths = $total_deaths + $value[$days_count]['deaths'];
     }
+    //Total Cases in India
+    foreach($data as $key => $value)
+    {
+        if($key=='India')
+        {
+            $total_confirmed_india=$value[$days_count]['confirmed'];
+            $total_recovered_india=$value[$days_count]['recovered'];
+            $total_deaths_india=$value[$days_count]['deaths'];
+        }
+    }
 
 ?>

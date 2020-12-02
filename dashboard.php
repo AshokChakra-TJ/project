@@ -97,15 +97,23 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>India Case
           </button>
           <div id="Demo1" class="w3-hide w3-container">
-          <b>Total: </b>  91,96,431 &nbsp;&nbsp; <b>Active: </b>  4,39,325 <br>
-          <b>Recovered: </b>  86,20,606 &nbsp;&nbsp; <b>Deaths: </b>  1,34,418
+          <table>
+          <tr><th align="left">Total Confirmed</th><td><?php echo $total_confirmed_india;?></td></tr>
+          <tr style="color:yellow"><th align="left">Active</th><td><?php echo $total_confirmed_india-$total_recovered_india-$total_deaths_india;?></td></tr>
+          <tr style="color:green"><th align="left">Recovered</th><td><?php echo $total_recovered_india;?></td></tr>
+          <tr style="color:red"><th align="left">Deaths</th><td><?php echo $total_deaths_india;?></td></tr>
+          </table>
           </div>
           <button onClick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l2 w3-left-align">
           <i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Worldwide Case
           </button>
           <div id="Demo2" class="w3-hide w3-container">
-          <b>Total: </b>  <?php echo $total_confirmed;?><br>
-          <b>Recovered: </b>  <?php echo $total_recovered;?> &nbsp;&nbsp; <b>Deaths: </b>  <?php echo $total_deaths;?>
+          <table>
+          <tr><th align="left">Total Confirmed</th><td><?php echo $total_confirmed;?></td></tr>
+          <tr style="color:yellow"><th align="left">Active</th><td><?php echo $total_confirmed-$total_recovered-$total_deaths;?></td></tr>
+          <tr style="color:green"><th align="left">Recovered</th><td><?php echo $total_recovered;?></td></tr>
+          <tr style="color:red"><th align="left">Deaths</th><td><?php echo $total_deaths;?></td></tr>
+          </table>
           </div>
           
         </div>      
